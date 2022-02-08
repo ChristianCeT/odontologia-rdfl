@@ -1,9 +1,16 @@
-import React from 'react';
+import React from "react";
+import Body from "../components/Layout/Body";
+import Footer from "../components/Layout/Footer";
+import Header from "../components/Layout/Header";
 
 const index = () => {
-  return <div>
-    <h1>hola</h1>
-  </div>;
+  return (
+    <>
+      <Header></Header>
+      <Body></Body>
+      <Footer></Footer>
+    </>
+  );
 };
 
 export default index;
