@@ -1,12 +1,13 @@
 import React from "react";
+
 import Carousel2 from "../Carousel/Carousel2";
+import CarouselPersonalized from "../Carousel/CarouselPersonalized";
 
 const Body = () => {
   return (
     <>
-      <div>
-        <Carousel2></Carousel2>
-      </div>
+      <Carousel2></Carousel2>
+      <CarouselPersonalized></CarouselPersonalized>
     </>
   );
 };
