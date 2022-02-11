@@ -9,10 +9,10 @@ const Header = () => {
   return (
     <div className="h-44">
       <div className=" w-full flex">
-        <div className="bg-[#09B6BD] h-[14px] w-[417px] "></div>
-        <div className="bg-[#1F90CB] h-[14px] w-[516px]"></div>
-        <div className="bg-[#06BB82] h-[14px] w-[134px]"> </div>
-        <div className="bg-[#06BB82] h-[85px] w-[280px] fixed right-[0%] z-10">
+        <div className="bg-[#09B6BD] h-[14px] w-1/4 "></div>
+        <div className="bg-[#1F90CB] h-[14px] w-[45%]"></div>
+        <div className="bg-[#06BB82] h-[14px] w-[10%]"> </div>
+        <div className="bg-[#06BB82] h-[85px] w-1/5 fixed z-10 right-0">
           <div className=" w-full justify-center flex pt-[19px] ">
             <a href="https://www.instagram.com/nicolas25dev/" target="_blank">
               {" "}

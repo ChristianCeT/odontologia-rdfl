@@ -80,12 +80,12 @@ const CarouselPersonalized = () => {
             </button>
           ))}
         </div>
-        <ModalComponent
-          open={open}
-          setOpen={setOpen}
-          posicion={posicion}
-        ></ModalComponent>
       </Carousel>
+      <ModalComponent
+        open={open}
+        setOpen={setOpen}
+        posicion={posicion}
+      ></ModalComponent>
     </div>
   );
 };
