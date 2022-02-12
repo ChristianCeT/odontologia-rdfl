@@ -13,18 +13,18 @@ const Header = () => {
         <div className="bg-[#1F90CB] h-[14px] w-[45%]"></div>
         <div className="bg-[#06BB82] h-[14px] w-[10%]"> </div>
         <div className="bg-[#06BB82] h-[85px] w-1/5 fixed z-10 right-0">
-          <div className=" w-full justify-center flex pt-[19px] ">
+          <div className=" w-full flex pt-[19px] justify-evenly ">
             <a href="https://www.instagram.com/nicolas25dev/" target="_blank">
               {" "}
-              <Image src={instagram} />
+              <Image src={instagram} width={35} height={35} />
             </a>
             <a href="https://www.instagram.com/nicolas25dev/" target="_blank">
               {" "}
-              <Image src={facebook} />
+              <Image src={facebook} width={35} height={35} />
             </a>
             <a href="https://www.instagram.com/nicolas25dev/" target="_blank">
               {" "}
-              <Image src={whatsapp} />
+              <Image src={whatsapp} width={35} height={35} />
             </a>
           </div>
           <p className="text-white text-center text-[18px] font-[500]">

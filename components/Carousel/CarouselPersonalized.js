@@ -13,6 +13,7 @@ import slider9 from "../../assets/img/slider9.jpg";
 import slider10 from "../../assets/img/slider10.jpg";
 import slider11 from "../../assets/img/slider11.jpg";
 import slider12 from "../../assets/img/slider12.jpg";
+import DienteGalery from "../../assets/Iconos/GaleryDiente.svg";
 import ModalComponent from "../ModalComponent/ModalComponent";
 
 const imagenes = [
@@ -45,18 +46,25 @@ const CarouselPersonalized = () => {
 
   return (
     <div>
-      <div className="bg-green-500 h-52 mt-40"></div>
+      <div className="h-52 flex items-center justify-center flex-col mt-11 text-[#06BB82]">
+        <Image src={DienteGalery} width={100} height={130} className=""></Image>
+        <h2 className="text-[25px] text-[#09B6BD]">GALERIA</h2>
+      </div>
       <Carousel
-        className="bg-blue-300"
+        className=""
         showThumbs={false}
         showStatus={false}
         useKeyboardArrows={false}
         showArrows={false}
         dynamicHeight={false}
       >
-        <div className="flex flex-wrap gap-1 justify-center bg-red-400">
+        <div className="flex flex-wrap justify-center">
           {imagenes.slice(0, 6).map((imagen, index) => (
-            <button key={index} onClick={() => onClick(index + 1)}>
+            <button
+              key={index}
+              onClick={() => onClick(index + 1)}
+              className="m-1 mt-0"
+            >
               <Image
                 priority={true}
                 src={imagen}
@@ -69,7 +77,11 @@ const CarouselPersonalized = () => {
         </div>
         <div>
           {imagenes.slice(6, 12).map((imagen, index) => (
-            <button onClick={() => onClick(index + 7)} key={index}>
+            <button
+              onClick={() => onClick(index + 7)}
+              key={index}
+              className="m-1 mt-0"
+            >
               <Image
                 priority={true}
                 src={imagen}
