@@ -20,13 +20,13 @@ const Contact = () => {
             llamarnos a nuestros números telefónicos.
           </p>
         </div>
-        <div className="flex  w-full  justify-center  ">
-          <div className="backdrop-opacity-10 backdrop-invert bg-white/30 w-[207px] h-[79px] flex flex-row items-center justify-center rounded-[15px] mt-[30px] cursor-pointer">
+        <div className="flex w-full justify-center">
+          <div className="backdrop-opacity-10 backdrop-invert bg-white/30 w-[207px] h-[79px] flex flex-row items-center justify-center rounded-[15px] mt-[30px] cursor-pointer translate-y-1.5 hover:scale-110 duration-300">
             <Image
               src={Telf}
               width={45}
               height={60}
-              className="animate-bounce"
+              className="hover:animate-spin"
             />{" "}
             <a href="tel:+51934120533">
               <span className="text-[#ffffff] ">LLÁMENOS</span>
@@ -35,17 +35,13 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="  w-full  h-96 flex flex-col items-center justify-center">
+      <div className="w-full h-96 flex flex-col items-center justify-center">
         <h1 className="text-[#09B6BD] text-[24px]">VIDEO</h1>
         <iframe
-          className="mt-[15px]"
-          width="450"
-          height="250"
           src="https://www.youtube.com/embed/UGLPABj6tTo"
           title="YouTube video player"
-          frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
+          allowFullScreen={true}
         ></iframe>
       </div>
 
@@ -53,7 +49,7 @@ const Contact = () => {
         <Image src={Fondo} height={250} layout="responsive" quality={100} />
       </div>
 
-      <div className="w-full  relative bottom-[250px]">
+      <div className="w-full relative bottom-[250px]">
         <h1 className="text-center text-[24px] text-[#ffffff] font-semibold">
           Porqué elergirnos
         </h1>
@@ -64,7 +60,7 @@ const Contact = () => {
           <Image src={Estelar} width={150} height={150} />
         </div>
         <div className="w-full flex justify-evenly ">
-          <span className="text-[18px] text-[#ffffff]  font-semibold">
+          <span className="text-[18px] text-[#ffffff] font-semibold">
             Compromiso
           </span>
           <span className="text-[18px] text-[#ffffff] font-semibold">

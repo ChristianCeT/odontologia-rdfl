@@ -16,15 +16,30 @@ const Header = () => {
           <div className=" w-full flex pt-[19px] justify-evenly ">
             <a href="https://www.instagram.com/nicolas25dev/" target="_blank">
               {" "}
-              <Image src={instagram} width={35} height={35} />
+              <Image
+                src={instagram}
+                width={35}
+                height={35}
+                className="translate-x-0 hover:scale-110 duration-300"
+              />
             </a>
             <a href="https://www.instagram.com/nicolas25dev/" target="_blank">
               {" "}
-              <Image src={facebook} width={35} height={35} />
+              <Image
+                src={facebook}
+                width={35}
+                height={35}
+                className="translate-x-0 hover:scale-110 duration-300"
+              />
             </a>
             <a href="https://www.instagram.com/nicolas25dev/" target="_blank">
               {" "}
-              <Image src={whatsapp} width={35} height={35} />
+              <Image
+                src={whatsapp}
+                width={35}
+                height={35}
+                className="translate-x-0 hover:scale-110 duration-300"
+              />
             </a>
           </div>
           <p className="text-white text-center text-[18px] font-[500]">

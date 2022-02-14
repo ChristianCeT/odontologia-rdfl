@@ -25,6 +25,7 @@ const Carousel2 = () => {
           layout="responsive"
           quality={100}
           height={750}
+          priority={true}
         ></Image>
       </div>
       <div>
@@ -34,6 +35,7 @@ const Carousel2 = () => {
           layout="responsive"
           quality={100}
           height={750}
+         
         ></Image>
       </div>
       <div>
@@ -43,6 +45,7 @@ const Carousel2 = () => {
           layout="responsive"
           quality={100}
           height={750}
+         
         ></Image>
       </div>
     </Carousel>
