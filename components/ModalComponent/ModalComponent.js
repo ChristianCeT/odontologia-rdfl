@@ -44,15 +44,13 @@ const ModalComponent = ({ open, setOpen, posicion }) => {
       center
       blockScroll={false}
     >
-      <div className="bg-red-100 w-[30rem] h-[30rem]">
-        <Image
-          src={imagenes[posicion - 1]}
-          width={480}
-          height={480}
-          objectFit="cover"
-          priority
-        ></Image>
-      </div>
+      <Image
+        src={imagenes[posicion - 1]}
+        width={480}
+        height={480}
+        objectFit="cover"
+        priority
+      ></Image>
     </Modal>
   );
 };

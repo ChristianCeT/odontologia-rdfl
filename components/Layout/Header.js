@@ -12,7 +12,7 @@ const Header = () => {
         <div className="bg-[#09B6BD] h-[14px] w-1/4 "></div>
         <div className="bg-[#1F90CB] h-[14px] w-[45%]"></div>
         <div className="bg-[#06BB82] h-[14px] w-[10%]"> </div>
-        <div className="bg-[#06BB82] h-[85px] w-1/5 fixed z-10 right-0">
+        <div className="bg-[#06BB82] h-[55px] w-1/5 fixed z-10 right-0 sm:h-[85px] ">
           <div className=" w-full flex pt-[19px] justify-evenly ">
             <a href="https://www.instagram.com/nicolas25dev/" target="_blank">
               {" "}
@@ -42,28 +42,25 @@ const Header = () => {
               />
             </a>
           </div>
-          <p className="text-white text-center text-[18px] font-[500]">
-            {" "}
-            Redes Sociales{" "}
+          <p className=" text-white  text-center hidden font-[500]  sm:block">
+            Redes Sociales
           </p>
         </div>
       </div>
       <div className="text-[70px]">logo</div>
 
-      <div className="bg-[#F2F2F2] w-full flex justify-center h-[40px] items-center">
+      <div className="bg-[#F2F2F2] w-full flex  justify-evenly h-[40px] items-center">
         <Link href="/">
-          <a className="pr-[15px] pl-[15px]  hover:text-[#09B6BD]">Inicio</a>
+          <a className=" hover:text-[#09B6BD]">Inicio</a>
         </Link>
-        <Link href="/">
-          <a className="pr-[15px] pl-[15px]  hover:text-[#09B6BD]">Galeria</a>
+        <Link href="#galeria">
+          <a className=" hover:text-[#09B6BD]">Galeria</a>
         </Link>
-        <Link href="/">
-          <a className="pr-[15px] pl-[15px]  hover:text-[#09B6BD]">
-            ¿Por qué elegirnos?
-          </a>
+        <Link href="#por">
+          <a className=" hover:text-[#09B6BD]">¿Por qué elegirnos?</a>
         </Link>
-        <Link href="/">
-          <a className="pr-[15px] pl-[15px]  hover:text-[#09B6BD]">Contactos</a>
+        <Link href="#contact">
+          <a className="  hover:text-[#09B6BD]">Contactos</a>
         </Link>
       </div>
     </div>

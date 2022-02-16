@@ -21,7 +21,7 @@ const Contact = () => {
           </p>
         </div>
         <div className="flex w-full justify-center">
-          <div className="backdrop-opacity-10 backdrop-invert bg-white/30 w-[207px] h-[79px] flex flex-row items-center justify-center rounded-[15px] mt-[30px] cursor-pointer translate-y-1.5 hover:scale-110 duration-300">
+          <div className="backdrop-opacity-10 backdrop-invert bg-white/30 w-[207px] h-[79px] flex flex-row items-center justify-center rounded-[15px] mt-[30px] cursor-pointer translate-y-1.5 hover:scale-110 duration-300 ">
             <Image
               src={Telf}
               width={45}
@@ -45,33 +45,63 @@ const Contact = () => {
         ></iframe>
       </div>
 
-      <div className="w-full brightness-50">
-        <Image src={Fondo} height={250} layout="responsive" quality={100} />
-      </div>
-
-      <div className="w-full relative bottom-[250px]">
-        <h1 className="text-center text-[24px] text-[#ffffff] font-semibold">
+      <div className='bg-[url("https://images.pexels.com/photos/7788508/pexels-photo-7788508.jpeg?cs=srgb&dl=pexels-ivan-babydov-7788508.jpg&fm=jpg")] w-full h-[650px] bg-center brightness-50  md:h-80'></div>
+      <div className="w-full relative  bottom-[590px]   md:bottom-[280px] ">
+        <h1
+          id="por"
+          className="text-center text-[24px] text-[#ffffff] font-semibold 
+      md:mb-[35px] "
+        >
           Porqué elergirnos
         </h1>
-        <div className="w-full flex justify-evenly  ">
-          <Image src={Compromiso} width={150} height={150} />
-          <Image src={Calidad} width={150} height={150} />
-          <Image src={Comunidad} width={150} height={150} />
-          <Image src={Estelar} width={150} height={150} />
-        </div>
-        <div className="w-full flex justify-evenly ">
-          <span className="text-[18px] text-[#ffffff] font-semibold">
-            Compromiso
-          </span>
-          <span className="text-[18px] text-[#ffffff] font-semibold">
-            Calidad
-          </span>
-          <span className="text-[18px] text-[#ffffff] font-semibold">
-            Profesionalismo
-          </span>
-          <span className="text-[18px] text-[#ffffff] font-semibold">
-            Eficiencia
-          </span>
+        <div className="w-full flex flex-col justify-evenly md:flex-row">
+          <div className=" flex flex-col items-center ">
+            <Image
+              src={Compromiso}
+              width={100}
+              height={100}
+              className="translate-x-0 hover:scale-110 duration-300"
+            />
+            <span className="text-[18px] text-[#ffffff] font-semibold">
+              Compromiso
+            </span>
+          </div>
+
+          <div className=" flex flex-col items-center ">
+            <Image
+              src={Calidad}
+              width={100}
+              height={100}
+              className="translate-x-0 hover:scale-110 duration-300"
+            />
+            <span className="text-[18px] text-[#fdfdfd] font-semibold">
+              Calidad
+            </span>
+          </div>
+
+          <div className=" flex flex-col items-center ">
+            <Image
+              src={Comunidad}
+              width={100}
+              height={100}
+              className="translate-x-0 hover:scale-110 duration-300"
+            />
+            <span className="text-[18px] text-[#fdfdfd] font-semibold">
+              Comunidad
+            </span>
+          </div>
+
+          <div className=" flex flex-col items-center ">
+            <Image
+              src={Estelar}
+              width={100}
+              height={100}
+              className="translate-x-0 hover:scale-110 duration-300"
+            />
+            <span className="text-[18px] text-[#fdfdfd] font-semibold">
+              Eficiencia
+            </span>
+          </div>
         </div>
       </div>
     </div>

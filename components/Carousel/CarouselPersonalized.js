@@ -48,7 +48,9 @@ const CarouselPersonalized = () => {
     <div>
       <div className="h-52 flex items-center justify-center flex-col mt-11 text-[#06BB82]">
         <Image src={DienteGalery} width={100} height={130} className=""></Image>
-        <h2 className="text-[25px] text-[#09B6BD]">GALERIA</h2>
+        <h2 id="galeria" className="text-[25px] text-[#09B6BD]">
+          GALERIA
+        </h2>
       </div>
       <Carousel
         className=""

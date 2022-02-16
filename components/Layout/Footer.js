@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
+import { motion } from "framer-motion";
 
 const Footer = () => {
   const [formDatos, setFormDatos] = useState({
@@ -9,24 +10,43 @@ const Footer = () => {
     descripcion: "",
   });
 
+  const [message, setMessage] = useState(null);
+  const [itsOk, setItsOk] = useState(false);
+
   const onSubmit = async (e) => {
     e.preventDefault();
+    const { nombre, apellido, correo, descripcion } = formDatos;
 
-    await emailjs
-      .send(
-        "service_cb2kld5",
-        "template_zob5jh9",
-        formDatos,
-        "user_L5vVaEPsXKcGpeoAsMoZy"
-      )
-      .then((res) => {
-        if (res.status == "200") {
-          console.log("ENVIADO CORRECTO");
-        }
-      })
-      .then((err) => {
-        console.log(err);
-      });
+    if ((nombre && apellido && correo && descripcion) === "") {
+      setItsOk(false);
+      setMessage("Debes rellenar todos los campos");
+    } else {
+      await emailjs
+        .send(
+          "service_cb2kld5",
+          "template_zob5jh9",
+          formDatos,
+          "user_L5vVaEPsXKcGpeoAsMoZy"
+        )
+        .then((res) => {
+          e.target.reset();
+          setItsOk(true);
+          setMessage("Mensaje enviado con éxito");
+          setTimeout(() => {
+            setMessage(null);
+            setFormDatos({
+              nombre: "",
+              apellido: "",
+              correo: "",
+              descripcion: "",
+            });
+            setItsOk(false);
+          }, 4500);
+        })
+        .then((err) => {
+          console.log(err);
+        });
+    }
   };
 
   const handleChange = (e) => {
@@ -41,7 +61,9 @@ const Footer = () => {
       <div className="w-full pb-3 flex flex-col justify-center md:flex-row md:h-[30rem] md:w-[99%] md:items-center">
         <div className="w-full h-full pb-16 flex flex-col items-center md:w-1/2">
           <div>
-            <h2 className="text-[#06BB82] text-[29px] font-[600]">CONTACTO</h2>
+            <h2 id="contact" className="text-[#06BB82] text-[29px] font-[600]">
+              CONTACTO
+            </h2>
           </div>
           <div>LOGO</div>
           <div>
@@ -76,7 +98,8 @@ const Footer = () => {
                 <input
                   name="nombre"
                   onChange={handleChange}
-                  className="h-[37px] w-full outline-none border border-gray-200 rounded-lg shadow-sm focus:border-[#06BB82] focus:shadow-md caret-[#06BB82]"
+                  className={`h-[37px] w-full outline-none border border-gray-200 rounded-lg shadow-sm focus:border-[#06BB82] focus:shadow-md caret-[#06BB82]
+                  `}
                 ></input>
               </div>
               <div className="ml-1">
@@ -111,13 +134,27 @@ const Footer = () => {
                 className="pl-1 w-full h-[8rem] outline-none resize-none border border-gray-200 rounded-lg shadow-sm focus:border-[#06BB82] focus:shadow-md caret-[#06BB82]"
               ></textarea>
             </div>
-            <div className="flex justify-center">
-              <button
+            <div className="flex flex-col items-center">
+              <motion.button
+                className="mt-3 w-4/5 flex justify-center bg-gradient-to-r from-[#09B6BD] to-[#06BB82] py-3 px-16 rounded-lg text-white font-[500]"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
                 type="submit"
-                className="mt-3 w-4/5 flex justify-center bg-gradient-to-r from-[#09B6BD] to-[#06BB82] py-3 px-16 rounded-lg text-white font-[500] "
               >
                 Enviar
-              </button>
+              </motion.button>
+
+              {message ? (
+                <div
+                  className={`mt-1 rounded-xl ${
+                    itsOk ? "bg-green-600" : "bg-red-500"
+                  }`}
+                >
+                  <p className="text-white py-3 px-4">{message}</p>
+                </div>
+              ) : (
+                ""
+              )}
             </div>
           </form>
         </div>
