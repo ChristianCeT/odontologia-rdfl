@@ -15,8 +15,6 @@ import Imagen11 from "../../assets/img/Imagen11.jpeg"
 import Imagen12 from "../../assets/img/Imagen12.jpeg"
 import Imagen13 from "../../assets/img/Imagen13.jpeg"
 import Imagen14 from "../../assets/img/Imagen14.jpeg"
-import Imagen15 from "../../assets/img/Imagen15.jpeg"
-
 import Image from "next/image";
 import { AiFillCloseCircle } from "react-icons/ai";
 
@@ -35,10 +33,13 @@ const imagenes = [
   Imagen12,
   Imagen13,
   Imagen14,
-  Imagen15,
+
 ];
 
-const ModalComponent = ({ open, setOpen, posicion }) => {
+const ModalComponent = ({ open, setOpen, posicion, nombreSeleccion}) => {
+
+  //nombreSeleccion.nombre
+
   return (
     <Modal
       open={open}

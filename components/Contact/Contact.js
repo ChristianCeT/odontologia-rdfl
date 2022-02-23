@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import Telf from "../../assets/Iconos/bx-mobile.svg";
-import Fondo from "../../assets/fondo-Nuevo.jpg";
 import Compromiso from "../../assets/Iconos/compromiso.svg";
 import Calidad from "../../assets/Iconos/bxs-calidad.svg";
 import Estelar from "../../assets/Iconos/bxs-estelar.svg";
@@ -10,7 +9,7 @@ import Comunidad from "../../assets/Iconos/bxs-Comunidad.svg";
 const Contact = () => {
   return (
     <div>
-      <div className="bg-[#09B6BD] w-full h-96  text-center items-center">
+      <div className="bg-[#5DC1B9] w-full h-96  text-center items-center">
         <div className="flex flex-col ">
           <h1 className="text-[24px] mt-[55px] text-[#ffffff]">
             Ponte en contacto con nosotros
@@ -22,12 +21,7 @@ const Contact = () => {
         </div>
         <div className="flex w-full justify-center">
           <div className="backdrop-opacity-10 backdrop-invert bg-white/30 w-[207px] h-[79px] flex flex-row items-center justify-center rounded-[15px] mt-[30px] cursor-pointer translate-y-1.5 hover:scale-110 duration-300 ">
-            <Image
-              src={Telf}
-              width={45}
-              height={60}
-              className="hover:animate-spin"
-            />{" "}
+            <Image src={Telf} width={45} height={60} />{" "}
             <a href="tel:+51934120533">
               <span className="text-[#ffffff] ">LLÁMENOS</span>
             </a>
@@ -37,15 +31,29 @@ const Contact = () => {
 
       <div className="w-full h-96 flex flex-col items-center justify-center">
         <h1 className="text-[#09B6BD] text-[24px]">VIDEO</h1>
-        <iframe
-          src="https://www.youtube.com/embed/UGLPABj6tTo"
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen={true}
-        ></iframe>
+
+        <div className="w-full flex  flex-col items-center md:flex-row justify-evenly">
+          <iframe
+            src="https://www.youtube.com/embed/UGLPABj6tTo"
+            width="315"
+            height="200"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen={true}
+            className="hidden  md:block"
+          ></iframe>
+          <iframe
+            src="https://www.youtube.com/embed/GUgvT_NfIlU"
+            width="315"
+            height="200"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen={true}
+          ></iframe>
+        </div>
       </div>
 
-      <div className='bg-[url("https://images.pexels.com/photos/7788508/pexels-photo-7788508.jpeg?cs=srgb&dl=pexels-ivan-babydov-7788508.jpg&fm=jpg")] w-full h-[650px] bg-center brightness-50  md:h-80'></div>
+      <div className='bg-[url("https://images.pexels.com/photos/7788508/pexels-photo-7788508.jpeg?cs=srgb&dl=pexels-ivan-babydov-7788508.jpg&fm=jpg")] w-full h-[650px] bg-center brightness-50 md:h-80 bg-fixed'></div>
       <div className="w-full relative  bottom-[590px]   md:bottom-[280px] ">
         <h1
           id="por"

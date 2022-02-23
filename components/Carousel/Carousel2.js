@@ -20,34 +20,30 @@ const Carousel2 = () => {
         dynamicHeight={false}
         infiniteLoop={true}
       >
-        <div className="">
-          <Image
-            src={doctora}
-            objectFit="contain"
-            layout="responsive"
-            quality={100}
-            height={195}
-            priority={true}
-          ></Image>
-        </div>
-        <div>
-          <Image
-            src={diente2}
-            objectFit="cover"
-            layout="responsive"
-            quality={100}
-            height={750}
-          ></Image>
-        </div>
-        <div>
-          <Image
-            src={diente3}
-            objectFit="cover"
-            layout="responsive"
-            quality={100}
-            height={750}
-          ></Image>
-        </div>
+        <Image
+          src={diente1}
+          objectFit="cover"
+          layout="responsive"
+          quality={100}
+          height={750}
+          priority={true}
+        ></Image>
+
+        <Image
+          src={diente2}
+          objectFit="cover"
+          layout="responsive"
+          quality={100}
+          height={750}
+        ></Image>
+
+        <Image
+          src={diente3}
+          objectFit="cover"
+          layout="responsive"
+          quality={100}
+          height={750}
+        ></Image>
       </Carousel>
       <div className="absolute left-[5%] top-[20%] md:bottom-[40%] md:left-[15%] md:top-[40%]">
         <p className="text-[#06BB82] text-[1.7rem] break-all sm:text-[3rem] lg:w-[70%]">

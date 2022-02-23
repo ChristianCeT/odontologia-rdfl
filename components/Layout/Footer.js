@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
+import whastApp from "../../assets/Iconos/bxl-whatsapp.svg";
+import Image from "next/image";
 
 const Footer = () => {
   const [formDatos, setFormDatos] = useState({
@@ -136,7 +138,7 @@ const Footer = () => {
             </div>
             <div className="flex flex-col items-center">
               <motion.button
-                className="mt-3 w-4/5 flex justify-center bg-gradient-to-r from-[#09B6BD] to-[#06BB82] py-3 px-16 rounded-lg text-white font-[500]"
+                className="mt-3 w-4/5 flex justify-center bg-[#5DC1B9] py-3 px-16 rounded-lg text-white font-[500]"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 type="submit"
@@ -159,7 +161,23 @@ const Footer = () => {
           </form>
         </div>
       </div>
-      <div className="bg-gradient-to-r from-[#09B6BD] to-[#06BB82] h-9 flex justify-center items-center text-white">
+
+      <div className=" fixed right-5 bottom-9 translate-x-0 hover:scale-110 duration-300">
+        <a
+          href="https://api.whatsapp.com/send?phone=+51934120533"
+          target="_blank"
+        >
+          {" "}
+          <Image
+            src={whastApp}
+            width={49}
+            height={50}
+            className="bg-[#186A60] rounded-full cursor-pointer "
+          />
+        </a>
+      </div>
+
+      <div className="bg-[#5DC1B9] h-9 flex justify-center items-center text-white">
         <p>&copy; 2022 Creado for FIREDEV</p>
       </div>
     </>
