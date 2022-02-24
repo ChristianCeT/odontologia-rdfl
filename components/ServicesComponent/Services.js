@@ -1,73 +1,100 @@
-import React, { useRef } from "react";
+import React from "react";
 import Image from "next/image";
 import DienteService from "../../assets/Iconos/DienteService.svg";
 import { useDimension } from "../../hooks/useDimension";
 import { Carousel } from "react-responsive-carousel";
+import {
+  imagenesServices,
+  imagenesServices2,
+} from "../ServicesComponent/ServicesImg.js";
 
 const Services = () => {
   const { windowSize } = useDimension();
 
   const serviciosData = [
     {
-      nombre: "SERVICIO 1",
-      descripcion: "Descripcion servicio 1",
+      nombre: "Coronas de porcelana sobre metal",
+      /* descripcion: "Descripcion servicio 1", */
     },
     {
-      nombre: "SERVICIO 2",
-      descripcion: "Descripcion servicio 2",
+      nombre: "Libres de metal",
     },
     {
-      nombre: "SERVICIO 3",
-      descripcion: "Descripcion servicio 3",
+      nombre: "Carillas de porcelana pura",
     },
     {
-      nombre: "SERVICIO 4",
-      descripcion: "Descripcion servicio 4",
+      nombre: "Carillas e.max",
     },
     {
-      nombre: "SERVICIO 5",
-      descripcion: "Descripcion servicio 5",
+      nombre: "Zircornio",
     },
     {
-      nombre: "SERVICIO 6",
-      descripcion: "Descripcion servicio 6",
+      nombre: "Total",
     },
     {
-      nombre: "SERVICIO 7",
-      descripcion: "Descripcion servicio 7",
+      nombre: "PPR de acnilicio",
     },
     {
-      nombre: "SERVICIO 8",
-      descripcion: "Descripcion servicio 8",
+      nombre: "Coronas de invocron",
     },
     {
-      nombre: "SERVICIO 9",
-      descripcion: "Descripcion servicio 9",
+      nombre: "PPR Base metálica",
     },
     {
-      nombre: "SERVICIO 10",
-      descripcion: "Descripcion servicio 10",
+      nombre: "Ferulas de acetato",
     },
   ];
 
   return (
-    <div className="bg-gradient-to-r from-[#09B6BD] to-[#06BB82] text-white flex items-center flex-col md:flex-row">
-      <div className="md:w-1/2 px-20 py-5">
-        <h2 className="text-[32px] mb-4">SERVICIOS</h2>
-        <h3 className="text-[20px] mb-4">Laboratorio Dental</h3>
-        <p>
-          Haz clic aquí para agregar tu contenido y personalizar el texto. Es un
-          lugar id eal para contar cómo comenzó tu compañía y hacer que los
-          usuarios sepan un poco más sobre su historia, los comienzos del equipo
-          u otra información que desees compartir. Haz clic en Editar texto para
-          empezar.
-        </p>
+    <div className="bg-gradient-to-r from-[#09B6BD] to-[#5DC1B9] text-white flex items-center flex-col md:flex-row">
+      <div className="md:w-1/2 xl:px-28 px-12 w-full h-full flex flex-col items-center overflow-hidden">
+        <h2 id="servicio" className="text-[32px] mb-4 mt-[10%]">SERVICIOS</h2>
+        <Carousel
+          className="w-full overflow-hidden"
+          showIndicators={false}
+          showThumbs={false}
+          showStatus={false}
+          useKeyboardArrows={false}
+          showArrows={false}
+          emulateTouch={true}
+          dynamicHeight={false}
+          infiniteLoop={true}
+          autoPlay={true}
+          interval={2000}
+        >
+          {imagenesServices2.map((serviceImage, index) => (
+            <Image
+              key={index}
+              className="rounded-lg"
+              src={serviceImage}
+              layout="responsive"
+              height={1200}
+              quality={100}
+            ></Image>
+          ))}
+          {imagenesServices.map((serviceImage, index) => (
+            <Image
+              key={index}
+              className="rounded-lg"
+              src={serviceImage}
+              layout="fill"
+              quality={100}
+            ></Image>
+          ))}
+        </Carousel>
       </div>
       <Carousel
         className="w-full md:w-1/2"
-        dynamicHeight={false}
+        showIndicators={false}
         showThumbs={false}
         showStatus={false}
+        useKeyboardArrows={false}
+        showArrows={false}
+        emulateTouch={true}
+        dynamicHeight={false}
+        infiniteLoop={true}
+        autoPlay={true}
+        interval={3000}
       >
         <div className="mt-[10%]">
           <h1 className="text-[32px]">CORONAS DE PORCELANA</h1>
@@ -78,7 +105,6 @@ const Services = () => {
                   <Image src={DienteService} layout="intrinsic"></Image>
                 </div>
                 <h2 className="text-[25px]">{servicioD.nombre}</h2>
-                <p className="text-[15px]">{servicioD.descripcion}</p>
               </div>
             ))}
           </div>
@@ -93,7 +119,6 @@ const Services = () => {
                   <Image src={DienteService} layout="intrinsic"></Image>
                 </div>
                 <h2 className="text-[25px]">{servicioD.nombre}</h2>
-                <p className="text-[15px]">{servicioD.descripcion}</p>
               </div>
             ))}
           </div>

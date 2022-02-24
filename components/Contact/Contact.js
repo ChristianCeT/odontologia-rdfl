@@ -29,8 +29,8 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="w-full h-96 flex flex-col items-center justify-center">
-        <h1 className="text-[#09B6BD] text-[24px]">VIDEO</h1>
+      <div className="w-full h-[720px] flex flex-col items-center justify-center">
+        <h1 className="text-[#5DC1B9] text-[24px] mb-10">VIDEO</h1>
 
         <div className="w-full flex  flex-col items-center md:flex-row justify-evenly">
           <iframe
@@ -51,6 +51,26 @@ const Contact = () => {
             allowFullScreen={true}
           ></iframe>
         </div>
+        <div className="w-full flex  flex-col items-center md:flex-row justify-evenly mt-24">
+        <iframe
+          src="https://www.youtube.com/embed/UGLPABj6tTo"
+          width="315"
+          height="200"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen={true}
+          className="hidden  md:block"
+        ></iframe>
+        <iframe
+          src="https://www.youtube.com/embed/GUgvT_NfIlU"
+          width="315"
+          height="200"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen={true}
+        ></iframe>
+      </div>
+        
       </div>
 
       <div className='bg-[url("https://images.pexels.com/photos/7788508/pexels-photo-7788508.jpeg?cs=srgb&dl=pexels-ivan-babydov-7788508.jpg&fm=jpg")] w-full h-[650px] bg-center brightness-50 md:h-80 bg-fixed'></div>

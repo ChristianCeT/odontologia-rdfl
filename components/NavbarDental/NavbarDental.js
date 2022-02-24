@@ -1,46 +1,49 @@
 import React, { useState } from "react";
-import Logo from "../../assets/logo/png-transparent-logo-dentistry-graphic-design-design-blue-text-logo_preview_rev_1.png";
+import Logo from "../../assets/logo/WhatsApp Image 2022-02-22 at 9.26.31 PM_preview_rev_1.png";
 import Image from "next/image";
 import Menu from "../../assets/Iconos/bx-align-right.svg";
 
+
+
+
 export const NavbarDental = () => {
   let Links = [
-    { name: "Servicios", link: "/" },
-    { name: "Galeria", link: "/" },
-    { name: "¿Por qué elegirnos?", link: "/" },
-    { name: "Contactos", link: "/" },
+    { name: "Servicios", link: "#servicio" },
+    { name: "Galeria", link: "#galeria" },
+    { name: "¿Por qué elegirnos?", link: "#por" },
+    { name: "Contactos", link: "#contact"},
   ];
   let [open, setOpen] = useState(false);
 
   return (
-    <div className="shadow-md w-full ">
-      <div className="md:flex items-center justify-between bg-white py-4 md:px-10 px-7">
+    <div className="shadow-md w-full  ">
+      <div className="md:flex items-center justify-between bg-[#5DC1B9] h-44 py-4 md:px-10 px-7">
         <div
-          className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins] 
-          text-gray-800"
+          className="font-bold text-2xl cursor-pointer  flex items-center font-[Poppins] 
+          "
         >
-          <span className="text-3xl  mr-1 pt-2">
-            <Image src={Logo} width={150} height={85} />
-          </span>
+          <div className="logo">
+            <Image src={Logo} width={250} height={150} quality={100} priority={true}/>
+          </div>
         </div>
 
         <div
           onClick={() => setOpen(!open)}
-          className="text-3xl absolute right-8 top-6 cursor-pointer md:hidden"
+          className="text-3xl absolute right-0 top-6  cursor-pointer md:hidden"
         >
           <Image src={Menu} width={50} height={50} />
         </div>
 
         <ul
-          className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
-            open ? "top-20 " : "top-[-490px]"
+          className={`md:flex  md:items-center md:pb-0 pb-3 absolute md:static bg-[#5DC1B9] md:z-[100] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
+            open ? "top-44 " : "top-[-490px]"
           }`}
         >
           {Links.map((link) => (
             <li key={link.name} className="md:ml-8 text-xl md:my-0 my-7">
               <a
                 href={link.link}
-                className="text-gray-800 hover:text-gray-400 duration-500"
+                className="text-white hover:text-[#06BB82]  duration-500 font-normal"
               >
                 {link.name}
               </a>
@@ -50,4 +53,4 @@ export const NavbarDental = () => {
       </div>
     </div>
   );
-};
+};  

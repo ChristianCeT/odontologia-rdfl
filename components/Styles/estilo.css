@@ -1,0 +1,16 @@
+.logo{
+
+    background-color: black;
+    clip-path: polygon(0 0, 100% 0, 79% 100%, 0% 100%);
+    width: 350px;
+    height: 100%;
+    margin-left: -40px;
+    padding-top: 18px;
+
+}
+@media (max-width:767px) {
+     .logo{
+       margin-left: -28px;
+       margin-top:-20px ;
+    }
+}

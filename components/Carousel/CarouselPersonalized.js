@@ -22,19 +22,19 @@ import ModalComponent from "../ModalComponent/ModalComponent";
 const data = [
   {
     image: Imagen1,
-    nombre: "NOMBRE 1",
+    nombre: "ZIRCONIO",
   },
   {
     image: Imagen2,
-    nombre: "NOMBRE 2",
+    nombre: "PRÓTESIS TOTAL",
   },
   {
     image: Imagen3,
-    nombre: "NOMBRE 3",
+    nombre: "PREPARACIÓN DE CORONAS DE PORCELANA EN DURALAY",
   },
   {
     image: Imagen4,
-    nombre: "NOMBRE 4",
+    nombre: "PRESENTACIÓN DE ENVÍO",
   },
   {
     image: Imagen5,
@@ -42,7 +42,7 @@ const data = [
   },
   {
     image: Imagen6,
-    nombre: "NOMBRE 6",
+    nombre: "FÉRULA DE ACETATO",
   },
   {
     image: Imagen7,
@@ -50,11 +50,11 @@ const data = [
   },
   {
     image: Imagen8,
-    nombre: "NOMBRE 8",
+    nombre: "CARILLAS E.MAX",
   },
   {
     image: Imagen9,
-    nombre: "NOMBRE 9",
+    nombre: "CERÁMICA EN PROCESO",
   },
   {
     image: Imagen10,
@@ -70,11 +70,11 @@ const data = [
   },
   {
     image: Imagen13,
-    nombre: "NOMBRE 13",
+    nombre: "PRÓTESIS TOTAL",
   },
   {
     image: Imagen14,
-    nombre: "NOMBRE 14",
+    nombre: "PREPARACIÓN DE METAL PARA PORCELANA",
   },
 ];
 
@@ -84,7 +84,7 @@ const CarouselPersonalized = () => {
   const [nombreSeleccion, setNombreSeleccion] = useState("");
 
   const cssTransform =
-    "relative overflow-hidden after:content-[attr(before)] after:text-[2rem] after:text-white after:bg-gradient-to-r from-[#06BB82] after:absolute after:inset-0 after:bottom-[6px] after:grid after:place-items-center after:translate-x-full hover:after:translate-x-0 hover:after:transition hover:after:duration-700 after:overflow-hidden";
+    "relative overflow-hidden  after:rounded-lg after:content-[attr(before)] after:text-[2rem] after:text-white after:bg-gradient-to-r from-[#5DC1B9] after:absolute after:inset-0 after:bottom-[6px] after:grid after:place-items-center after:translate-x-full hover:after:translate-x-0 hover:after:transition hover:after:duration-700 after:overflow-hidden";
 
   const onClick = (index, nombre) => {
     setOpen(true);
@@ -121,6 +121,7 @@ const CarouselPersonalized = () => {
             >
               <div before={dataI.nombre} className={cssTransform}>
                 <Image
+                  className="rounded-lg"
                   priority={true}
                   src={dataI.image}
                   width={400}
@@ -140,6 +141,7 @@ const CarouselPersonalized = () => {
             >
               <div before={dataI.nombre} className={cssTransform}>
                 <Image
+                  className="rounded-lg"
                   priority={true}
                   src={dataI.image}
                   width={400}

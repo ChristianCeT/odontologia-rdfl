@@ -1,8 +1,12 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
-import whastApp from "../../assets/Iconos/bxl-whatsapp.svg";
+import WhastAppW from "../../assets/Iconos/bxl-whatsappW.svg";
 import Image from "next/image";
+import Whatsapp from "../../assets/Iconos/bxl-whatsapp.svg";
+import Facebook from "../../assets/Iconos/bxl-facebook.svg";
+import Twitter from "../../assets/Iconos/bxl-twitter.svg";
+import Instagram from "../../assets/Iconos/bxl-instagram.svg";
 
 const Footer = () => {
   const [formDatos, setFormDatos] = useState({
@@ -11,6 +15,13 @@ const Footer = () => {
     correo: "",
     descripcion: "",
   });
+
+  const iconosA = [
+    { red: Whatsapp, link: "https://www.youtube.com/" },
+    { red: Facebook, link: "https://www.youtube.com/" },
+    { red: Twitter, link: "https://www.youtube.com/" },
+    { red: Instagram, link: "https://www.youtube.com/" },
+  ];
 
   const [message, setMessage] = useState(null);
   const [itsOk, setItsOk] = useState(false);
@@ -78,6 +89,19 @@ const Footer = () => {
             <h3>
               <p className="text-[#06BB82] text-[19px] font-[500]">Correo:</p>
               firedev@hotmail.com
+            </h3>
+
+            <h3>
+              <p className="text-[#06BB82] text-[19px] font-[500]">
+                Redes sociales:
+              </p>
+              <div className="flex flex-row gap-[6px]">
+                {iconosA.map((icono, index) => (
+                  <a href={icono.link} target="_blank">
+                    <Image key={index} src={icono.red}></Image>
+                  </a>
+                ))}
+              </div>
             </h3>
 
             <h3>
@@ -167,18 +191,17 @@ const Footer = () => {
           href="https://api.whatsapp.com/send?phone=+51934120533"
           target="_blank"
         >
-          {" "}
           <Image
-            src={whastApp}
+            src={WhastAppW}
             width={49}
             height={50}
-            className="bg-[#186A60] rounded-full cursor-pointer "
+            className="bg-[#186A60] rounded-full cursor-pointer py-12"
           />
         </a>
       </div>
 
       <div className="bg-[#5DC1B9] h-9 flex justify-center items-center text-white">
-        <p>&copy; 2022 Creado for FIREDEV</p>
+        <p>&copy; 2022 Creado por FIREDEV</p>
       </div>
     </>
   );
