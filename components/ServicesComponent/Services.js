@@ -8,8 +8,6 @@ import {
 } from "../ServicesComponent/ServicesImg.js";
 
 const Services = () => {
- 
-
   const serviciosData = [
     {
       nombre: "Coronas de porcelana sobre metal",
@@ -52,16 +50,16 @@ const Services = () => {
         </h2>
         <Carousel
           className="w-full overflow-hidden"
-          showIndicators={false}
           showThumbs={false}
           showStatus={false}
           useKeyboardArrows={false}
           showArrows={false}
-          emulateTouch={true}
+          emulateTouch={false}
           dynamicHeight={false}
           infiniteLoop={true}
           autoPlay={true}
-          interval={2000}
+          interval={2500}
+          swipeable={false}
         >
           {imagenesServices2.map((serviceImage, index) => (
             <Image
@@ -94,11 +92,12 @@ const Services = () => {
         showStatus={false}
         useKeyboardArrows={false}
         showArrows={false}
-        emulateTouch={true}
+        emulateTouch={false}
         dynamicHeight={false}
-        infiniteLoop={true}
+        infiniteLoop={false}
         autoPlay={true}
-        interval={3000}
+        interval={2500}
+        swipeable={false}
       >
         <div className="mt-[10%]">
           <h1 className="text-[32px]">CORONAS DE PORCELANA</h1>

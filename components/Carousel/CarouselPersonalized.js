@@ -112,6 +112,7 @@ const CarouselPersonalized = () => {
         useKeyboardArrows={false}
         showArrows={false}
         dynamicHeight={false}
+        swipeable={false}
       >
         <div className="flex flex-wrap justify-center">
           {data.slice(0, 7).map((dataI, index) => (
