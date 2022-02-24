@@ -94,7 +94,7 @@ const Services = () => {
         showArrows={false}
         emulateTouch={false}
         dynamicHeight={false}
-        infiniteLoop={false}
+        infiniteLoop={true}
         autoPlay={true}
         interval={2500}
         swipeable={false}
