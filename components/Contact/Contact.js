@@ -21,7 +21,7 @@ const Contact = () => {
         </div>
         <div className="flex w-full justify-center">
           <div className="backdrop-opacity-10 backdrop-invert bg-white/30 w-[207px] h-[79px] flex flex-row items-center justify-center rounded-[15px] mt-[30px] cursor-pointer translate-y-1.5 hover:scale-110 duration-300 ">
-            <Image src={Telf} width={45} height={60} />{" "}
+            <Image alt="laboratorio-dental" src={Telf} width={45} height={60} />{" "}
             <a href="tel:+51934120533">
               <span className="text-[#ffffff] ">LLÁMENOS</span>
             </a>
@@ -52,25 +52,24 @@ const Contact = () => {
           ></iframe>
         </div>
         <div className="w-full flex  flex-col items-center md:flex-row justify-evenly mt-24">
-        <iframe
-          src="https://www.youtube.com/embed/UGLPABj6tTo"
-          width="315"
-          height="200"
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen={true}
-          className="hidden  md:block"
-        ></iframe>
-        <iframe
-          src="https://www.youtube.com/embed/GUgvT_NfIlU"
-          width="315"
-          height="200"
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen={true}
-        ></iframe>
-      </div>
-        
+          <iframe
+            src="https://www.youtube.com/embed/UGLPABj6tTo"
+            width="315"
+            height="200"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen={true}
+            className="hidden  md:block"
+          ></iframe>
+          <iframe
+            src="https://www.youtube.com/embed/GUgvT_NfIlU"
+            width="315"
+            height="200"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen={true}
+          ></iframe>
+        </div>
       </div>
 
       <div className='bg-[url("https://images.pexels.com/photos/7788508/pexels-photo-7788508.jpeg?cs=srgb&dl=pexels-ivan-babydov-7788508.jpg&fm=jpg")] w-full h-[650px] bg-center brightness-50 md:h-80 bg-fixed'></div>
@@ -85,6 +84,7 @@ const Contact = () => {
         <div className="w-full flex flex-col justify-evenly md:flex-row">
           <div className=" flex flex-col items-center ">
             <Image
+              alt="laboratorio-dental"
               src={Compromiso}
               width={100}
               height={100}
@@ -97,6 +97,7 @@ const Contact = () => {
 
           <div className=" flex flex-col items-center ">
             <Image
+              alt="laboratorio-dental"
               src={Calidad}
               width={100}
               height={100}
@@ -109,6 +110,7 @@ const Contact = () => {
 
           <div className=" flex flex-col items-center ">
             <Image
+              alt="laboratorio-dental"
               src={Comunidad}
               width={100}
               height={100}
@@ -121,6 +123,7 @@ const Contact = () => {
 
           <div className=" flex flex-col items-center ">
             <Image
+              alt="laboratorio-dental"
               src={Estelar}
               width={100}
               height={100}

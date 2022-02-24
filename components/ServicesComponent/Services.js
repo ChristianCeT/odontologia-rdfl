@@ -64,6 +64,7 @@ const Services = () => {
         >
           {imagenesServices2.map((serviceImage, index) => (
             <Image
+            alt="laboratorio-dental"
               key={index}
               className="rounded-lg"
               src={serviceImage}
@@ -74,6 +75,7 @@ const Services = () => {
           ))}
           {imagenesServices.map((serviceImage, index) => (
             <Image
+            alt="laboratorio-dental"
               key={index}
               className="rounded-lg"
               src={serviceImage}
@@ -102,7 +104,7 @@ const Services = () => {
             {serviciosData.slice(0, 5).map((servicioD, index) => (
               <div key={index} className="flex flex-col items-center">
                 <div className="md:w-[30%] w-[28%]">
-                  <Image src={DienteService} layout="intrinsic"></Image>
+                  <Image alt="laboratorio-dental"  src={DienteService} layout="intrinsic"></Image>
                 </div>
                 <h2 className="text-[25px]">{servicioD.nombre}</h2>
               </div>
@@ -116,7 +118,7 @@ const Services = () => {
             {serviciosData.slice(5, 10).map((servicioD, index) => (
               <div key={index} className="flex flex-col items-center">
                 <div className="md:w-[30%] w-[28%]">
-                  <Image src={DienteService} layout="intrinsic"></Image>
+                  <Image alt="laboratorio-dental" src={DienteService} layout="intrinsic"></Image>
                 </div>
                 <h2 className="text-[25px]">{servicioD.nombre}</h2>
               </div>

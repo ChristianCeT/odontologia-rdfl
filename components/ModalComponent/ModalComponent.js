@@ -1,20 +1,20 @@
 import React from "react";
 import { Modal } from "react-responsive-modal";
 
-import Imagen1 from "../../assets/img/Imagen1.jpeg"
-import Imagen2 from "../../assets/img/Imagen2.jpeg"
-import Imagen3 from "../../assets/img/Imagen3.jpeg"
-import Imagen4 from "../../assets/img/Imagen4.jpeg"
-import Imagen5 from "../../assets/img/Imagen5.jpeg"
-import Imagen6 from "../../assets/img/Imagen6.jpeg"
-import Imagen7 from "../../assets/img/Imagen7.jpeg"
-import Imagen8 from "../../assets/img/Imagen8.jpeg"
-import Imagen9 from "../../assets/img/Imagen9.jpeg"
-import Imagen10 from "../../assets/img/Imagen10.jpeg"
-import Imagen11 from "../../assets/img/Imagen11.jpeg"
-import Imagen12 from "../../assets/img/Imagen12.jpeg"
-import Imagen13 from "../../assets/img/Imagen13.jpeg"
-import Imagen14 from "../../assets/img/Imagen14.jpeg"
+import Imagen1 from "../../assets/img/Imagen1.jpeg";
+import Imagen2 from "../../assets/img/Imagen2.jpeg";
+import Imagen3 from "../../assets/img/Imagen3.jpeg";
+import Imagen4 from "../../assets/img/Imagen4.jpeg";
+import Imagen5 from "../../assets/img/Imagen5.jpeg";
+import Imagen6 from "../../assets/img/Imagen6.jpeg";
+import Imagen7 from "../../assets/img/Imagen7.jpeg";
+import Imagen8 from "../../assets/img/Imagen8.jpeg";
+import Imagen9 from "../../assets/img/Imagen9.jpeg";
+import Imagen10 from "../../assets/img/Imagen10.jpeg";
+import Imagen11 from "../../assets/img/Imagen11.jpeg";
+import Imagen12 from "../../assets/img/Imagen12.jpeg";
+import Imagen13 from "../../assets/img/Imagen13.jpeg";
+import Imagen14 from "../../assets/img/Imagen14.jpeg";
 import Image from "next/image";
 import { AiFillCloseCircle } from "react-icons/ai";
 
@@ -33,13 +33,9 @@ const imagenes = [
   Imagen12,
   Imagen13,
   Imagen14,
-
 ];
 
-const ModalComponent = ({ open, setOpen, posicion, nombreSeleccion}) => {
-
-  //nombreSeleccion.nombre
-
+const ModalComponent = ({ open, setOpen, posicion, nombreSeleccion }) => {
   return (
     <Modal
       open={open}
@@ -54,6 +50,7 @@ const ModalComponent = ({ open, setOpen, posicion, nombreSeleccion}) => {
       blockScroll={false}
     >
       <Image
+      alt="laboratorio-dental"
         src={imagenes[posicion - 1]}
         width={480}
         height={480}

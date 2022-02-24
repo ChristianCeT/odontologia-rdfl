@@ -97,8 +97,13 @@ const Footer = () => {
               </p>
               <div className="flex flex-row gap-[6px]">
                 {iconosA.map((icono, index) => (
-                  <a href={icono.link} key={index} target="_blank">
-                    <Image src={icono.red}></Image>
+                  <a
+                    href={icono.link}
+                    key={index}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <Image alt="laboratorio-dental" src={icono.red}></Image>
                   </a>
                 ))}
               </div>
@@ -190,8 +195,10 @@ const Footer = () => {
         <a
           href="https://api.whatsapp.com/send?phone=+51934120533"
           target="_blank"
+          rel="noreferrer"
         >
           <Image
+            alt="laboratorio-dental"
             src={WhastAppW}
             width={49}
             height={50}

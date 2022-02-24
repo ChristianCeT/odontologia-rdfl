@@ -23,7 +23,7 @@ export const NavbarDental = () => {
           "
         >
           <div className="logo">
-            <Image src={Logo} width={250} height={150} quality={100} priority={true}/>
+            <Image alt="laboratorio-dental" src={Logo} width={250} height={150} quality={100} priority={true}/>
           </div>
         </div>
 
@@ -31,7 +31,7 @@ export const NavbarDental = () => {
           onClick={() => setOpen(!open)}
           className="text-3xl absolute right-0 top-6  cursor-pointer md:hidden"
         >
-          <Image src={Menu} width={50} height={50} />
+          <Image alt="laboratorio-dental" src={Menu} width={50} height={50} />
         </div>
 
         <ul

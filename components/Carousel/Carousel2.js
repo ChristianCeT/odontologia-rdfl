@@ -22,6 +22,7 @@ const Carousel2 = () => {
         interval={4000}
       >
         <Image
+          alt="laboratorio-dental"
           src={fondo2}
           layout="fill"
           objectFit="inherit"
@@ -30,6 +31,7 @@ const Carousel2 = () => {
         ></Image>
 
         <Image
+          alt="laboratorio-dental"
           src={fondo1}
           layout="fill"
           objectFit="fill"
@@ -37,6 +39,7 @@ const Carousel2 = () => {
         ></Image>
 
         <Image
+          alt="laboratorio-dental"
           src={fondo3}
           layout="responsive"
           quality={100}

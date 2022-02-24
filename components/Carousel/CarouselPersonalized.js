@@ -92,15 +92,16 @@ const CarouselPersonalized = () => {
     setNombreSeleccion(nombre);
   };
 
-  useEffect(() => {
-    setPosicion(posicion);
-    setNombreSeleccion(nombreSeleccion);
-  }, [posicion]);
-
   return (
     <div>
       <div className="h-52 flex items-center justify-center flex-col mt-11">
-        <Image src={DienteGalery} width={100} height={130} className=""></Image>
+        <Image
+          alt="laboratorio-dental"
+          src={DienteGalery}
+          width={100}
+          height={130}
+          className=""
+        ></Image>
         <h2 id="galeria" className="text-[25px] text-[#09B6BD]">
           GALERIA
         </h2>
@@ -121,6 +122,7 @@ const CarouselPersonalized = () => {
             >
               <div before={dataI.nombre} className={cssTransform}>
                 <Image
+                  alt="laboratorio-dental"
                   className="rounded-lg"
                   priority={true}
                   src={dataI.image}
@@ -141,6 +143,7 @@ const CarouselPersonalized = () => {
             >
               <div before={dataI.nombre} className={cssTransform}>
                 <Image
+                  alt="laboratorio-dental"
                   className="rounded-lg"
                   priority={true}
                   src={dataI.image}
