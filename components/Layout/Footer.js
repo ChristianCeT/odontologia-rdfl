@@ -97,8 +97,8 @@ const Footer = () => {
               </p>
               <div className="flex flex-row gap-[6px]">
                 {iconosA.map((icono, index) => (
-                  <a href={icono.link} target="_blank">
-                    <Image key={index} src={icono.red}></Image>
+                  <a href={icono.link} key={index} target="_blank">
+                    <Image src={icono.red}></Image>
                   </a>
                 ))}
               </div>
