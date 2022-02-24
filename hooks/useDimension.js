@@ -16,7 +16,7 @@ export const useDimension = () => {
   };
 
   useEffect(() => {
-    window.addEventListener("resize", updateDimension);
+    window.addEventListener("resize", updateDimension, { passive: true });
     return () => window.removeEventListener("resize", updateDimension);
   }, []);
 

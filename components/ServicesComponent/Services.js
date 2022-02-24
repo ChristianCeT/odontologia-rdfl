@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import DienteService from "../../assets/Iconos/DienteService.svg";
-import { useDimension } from "../../hooks/useDimension";
 import { Carousel } from "react-responsive-carousel";
 import {
   imagenesServices,
@@ -9,7 +8,7 @@ import {
 } from "../ServicesComponent/ServicesImg.js";
 
 const Services = () => {
-  const { windowSize } = useDimension();
+ 
 
   const serviciosData = [
     {
@@ -48,7 +47,9 @@ const Services = () => {
   return (
     <div className="bg-gradient-to-r from-[#09B6BD] to-[#5DC1B9] text-white flex items-center flex-col md:flex-row">
       <div className="md:w-1/2 xl:px-28 px-12 w-full h-full flex flex-col items-center overflow-hidden">
-        <h2 id="servicio" className="text-[32px] mb-4 mt-[10%]">SERVICIOS</h2>
+        <h2 id="servicio" className="text-[32px] mb-4 mt-[10%]">
+          SERVICIOS
+        </h2>
         <Carousel
           className="w-full overflow-hidden"
           showIndicators={false}
@@ -64,18 +65,19 @@ const Services = () => {
         >
           {imagenesServices2.map((serviceImage, index) => (
             <Image
-            alt="laboratorio-dental"
+              alt="laboratorio-dental"
               key={index}
               className="rounded-lg"
               src={serviceImage}
               layout="responsive"
               height={1200}
               quality={100}
+              priority={true}
             ></Image>
           ))}
           {imagenesServices.map((serviceImage, index) => (
             <Image
-            alt="laboratorio-dental"
+              alt="laboratorio-dental"
               key={index}
               className="rounded-lg"
               src={serviceImage}
@@ -104,7 +106,11 @@ const Services = () => {
             {serviciosData.slice(0, 5).map((servicioD, index) => (
               <div key={index} className="flex flex-col items-center">
                 <div className="md:w-[30%] w-[28%]">
-                  <Image alt="laboratorio-dental"  src={DienteService} layout="intrinsic"></Image>
+                  <Image
+                    alt="laboratorio-dental"
+                    src={DienteService}
+                    layout="intrinsic"
+                  ></Image>
                 </div>
                 <h2 className="text-[25px]">{servicioD.nombre}</h2>
               </div>
@@ -118,7 +124,11 @@ const Services = () => {
             {serviciosData.slice(5, 10).map((servicioD, index) => (
               <div key={index} className="flex flex-col items-center">
                 <div className="md:w-[30%] w-[28%]">
-                  <Image alt="laboratorio-dental" src={DienteService} layout="intrinsic"></Image>
+                  <Image
+                    alt="laboratorio-dental"
+                    src={DienteService}
+                    layout="intrinsic"
+                  ></Image>
                 </div>
                 <h2 className="text-[25px]">{servicioD.nombre}</h2>
               </div>

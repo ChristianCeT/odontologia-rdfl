@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { Carousel } from "react-responsive-carousel";
 import fondo1 from "../../assets/fondo1.jpeg";
-import fondo2 from "../../assets/fondo2.PNG";
+import fondo2 from "../../assets/fondo2.jpeg";
 import fondo3 from "../../assets/fondo3.jpeg";
 import { motion } from "framer-motion";
 

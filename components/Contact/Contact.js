@@ -34,7 +34,7 @@ const Contact = () => {
 
         <div className="w-full flex  flex-col items-center md:flex-row justify-evenly">
           <iframe
-            src="https://www.youtube.com/embed/UGLPABj6tTo"
+            src="https://www.youtube.com/embed/GUgvT_NfIlU"
             width="315"
             height="200"
             title="YouTube video player"
@@ -43,7 +43,7 @@ const Contact = () => {
             className="hidden  md:block"
           ></iframe>
           <iframe
-            src="https://www.youtube.com/embed/GUgvT_NfIlU"
+            src="https://www.youtube.com/embed/FIQsQ8NfjQI"
             width="315"
             height="200"
             title="YouTube video player"
@@ -53,7 +53,7 @@ const Contact = () => {
         </div>
         <div className="w-full flex  flex-col items-center md:flex-row justify-evenly mt-24">
           <iframe
-            src="https://www.youtube.com/embed/UGLPABj6tTo"
+            src="https://www.youtube.com/embed/a1qpwC-WHek"
             width="315"
             height="200"
             title="YouTube video player"
@@ -62,7 +62,7 @@ const Contact = () => {
             className="hidden  md:block"
           ></iframe>
           <iframe
-            src="https://www.youtube.com/embed/GUgvT_NfIlU"
+            src="https://www.youtube.com/embed/35G9c-f6qlo"
             width="315"
             height="200"
             title="YouTube video player"
@@ -72,66 +72,69 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className='bg-[url("https://images.pexels.com/photos/7788508/pexels-photo-7788508.jpeg?cs=srgb&dl=pexels-ivan-babydov-7788508.jpg&fm=jpg")] w-full h-[650px] bg-center brightness-50 md:h-80 bg-fixed'></div>
-      <div className="w-full relative  bottom-[590px]   md:bottom-[280px] ">
-        <h1
-          id="por"
-          className="text-center text-[24px] text-[#ffffff] font-semibold 
+      <div className="relative">
+        <div className='bg-[url("https://images.pexels.com/photos/7788508/pexels-photo-7788508.jpeg?cs=srgb&dl=pexels-ivan-babydov-7788508.jpg&fm=jpg")] w-full h-[540px] bg-center brightness-50  absolute  md:h-[200px] bg-fixed'></div>
+
+        <div className="w-full absolute">
+          <h1
+            id="por"
+            className="text-center text-[24px] text-[#ffffff] font-semibold 
       md:mb-[35px] "
-        >
-          Porqué elergirnos
-        </h1>
-        <div className="w-full flex flex-col justify-evenly md:flex-row">
-          <div className=" flex flex-col items-center ">
-            <Image
-              alt="laboratorio-dental"
-              src={Compromiso}
-              width={100}
-              height={100}
-              className="translate-x-0 hover:scale-110 duration-300"
-            />
-            <span className="text-[18px] text-[#ffffff] font-semibold">
-              Compromiso
-            </span>
-          </div>
+          >
+            Porqué elergirnos
+          </h1>
+          <div className="w-full flex flex-col justify-evenly md:flex-row">
+            <div className=" flex flex-col items-center ">
+              <Image
+                alt="laboratorio-dental"
+                src={Compromiso}
+                width={100}
+                height={100}
+                className="translate-x-0 hover:scale-110 duration-300"
+              />
+              <span className="text-[18px] text-[#ffffff] font-semibold">
+                Compromiso
+              </span>
+            </div>
 
-          <div className=" flex flex-col items-center ">
-            <Image
-              alt="laboratorio-dental"
-              src={Calidad}
-              width={100}
-              height={100}
-              className="translate-x-0 hover:scale-110 duration-300"
-            />
-            <span className="text-[18px] text-[#fdfdfd] font-semibold">
-              Calidad
-            </span>
-          </div>
+            <div className=" flex flex-col items-center ">
+              <Image
+                alt="laboratorio-dental"
+                src={Calidad}
+                width={100}
+                height={100}
+                className="translate-x-0 hover:scale-110 duration-300"
+              />
+              <span className="text-[18px] text-[#fdfdfd] font-semibold">
+                Calidad
+              </span>
+            </div>
 
-          <div className=" flex flex-col items-center ">
-            <Image
-              alt="laboratorio-dental"
-              src={Comunidad}
-              width={100}
-              height={100}
-              className="translate-x-0 hover:scale-110 duration-300"
-            />
-            <span className="text-[18px] text-[#fdfdfd] font-semibold">
-              Comunidad
-            </span>
-          </div>
+            <div className=" flex flex-col items-center ">
+              <Image
+                alt="laboratorio-dental"
+                src={Comunidad}
+                width={100}
+                height={100}
+                className="translate-x-0 hover:scale-110 duration-300"
+              />
+              <span className="text-[18px] text-[#fdfdfd] font-semibold">
+                Comunidad
+              </span>
+            </div>
 
-          <div className=" flex flex-col items-center ">
-            <Image
-              alt="laboratorio-dental"
-              src={Estelar}
-              width={100}
-              height={100}
-              className="translate-x-0 hover:scale-110 duration-300"
-            />
-            <span className="text-[18px] text-[#fdfdfd] font-semibold">
-              Eficiencia
-            </span>
+            <div className=" flex flex-col items-center ">
+              <Image
+                alt="laboratorio-dental"
+                src={Estelar}
+                width={100}
+                height={100}
+                className="translate-x-0 hover:scale-110 duration-300"
+              />
+              <span className="text-[18px] text-[#fdfdfd] font-semibold">
+                Eficiencia
+              </span>
+            </div>
           </div>
         </div>
       </div>

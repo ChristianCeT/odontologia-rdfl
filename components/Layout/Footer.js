@@ -7,6 +7,7 @@ import Whatsapp from "../../assets/Iconos/bxl-whatsapp.svg";
 import Facebook from "../../assets/Iconos/bxl-facebook.svg";
 import Twitter from "../../assets/Iconos/bxl-twitter.svg";
 import Instagram from "../../assets/Iconos/bxl-instagram.svg";
+import Logo from "../../assets/logo/WhatsApp Image 2022-02-22 at 9.26.31 PM_preview_rev_1.png";
 
 const Footer = () => {
   const [formDatos, setFormDatos] = useState({
@@ -45,7 +46,7 @@ const Footer = () => {
           e.target.reset();
           setItsOk(true);
           setMessage("Mensaje enviado con éxito");
-          setTimeout(() => {
+          const respuesta = setTimeout(() => {
             setMessage(null);
             setFormDatos({
               nombre: "",
@@ -55,9 +56,11 @@ const Footer = () => {
             });
             setItsOk(false);
           }, 4500);
+
+          return () => clearTimeout(duration);
         })
         .then((err) => {
-          console.log(err);
+          return err;
         });
     }
   };
@@ -70,7 +73,7 @@ const Footer = () => {
   };
 
   return (
-    <>
+    <div className="mt-[550px] md:mt-[250px]">
       <div className="w-full pb-3 flex flex-col justify-center md:flex-row md:h-[30rem] md:w-[99%] md:items-center">
         <div className="w-full h-full pb-16 flex flex-col items-center md:w-1/2">
           <div>
@@ -78,7 +81,15 @@ const Footer = () => {
               CONTACTO
             </h2>
           </div>
-          <div>LOGO</div>
+          <div className="bg-black mb-3 rounded-lg">
+            <Image
+              alt="laboratorio-dental"
+              src={Logo}
+              width={290}
+              height={100}
+              quality={100}
+            />
+          </div>
           <div>
             <h3>
               <p className="text-[#06BB82] text-[19px] font-[500]">
@@ -184,7 +195,7 @@ const Footer = () => {
                   <p className="text-white py-3 px-4">{message}</p>
                 </div>
               ) : (
-                ""
+                <div></div>
               )}
             </div>
           </form>
@@ -210,7 +221,7 @@ const Footer = () => {
       <div className="bg-[#5DC1B9] h-9 flex justify-center items-center text-white">
         <p>&copy; 2022 Creado por FIREDEV</p>
       </div>
-    </>
+    </div>
   );
 };
 
