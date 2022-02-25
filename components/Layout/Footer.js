@@ -18,10 +18,10 @@ const Footer = () => {
   });
 
   const iconosA = [
-    { red: Whatsapp, link: "https://www.youtube.com/" },
-    { red: Facebook, link: "https://www.youtube.com/" },
-    { red: Twitter, link: "https://www.youtube.com/" },
-    { red: Instagram, link: "https://www.youtube.com/" },
+    { red: Whatsapp, link: "https://api.whatsapp.com/send?phone=+51934120533" },
+    { red: Facebook, link: "https://www.facebook.com/rodceram" },
+    { red: Twitter, link: "https://twitter.com/rodceram20" },
+    { red: Instagram, link: "https://www.instagram.com/tavrvs7/" },
   ];
 
   const [message, setMessage] = useState(null);

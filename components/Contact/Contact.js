@@ -40,7 +40,7 @@ const Contact = () => {
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen={true}
-            className="hidden  md:block"
+            className="hidden rounded-lg md:block"
           ></iframe>
           <iframe
             src="https://www.youtube.com/embed/FIQsQ8NfjQI"
@@ -49,6 +49,7 @@ const Contact = () => {
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen={true}
+            className=" rounded-lg "
           ></iframe>
         </div>
         <div className="w-full flex  flex-col items-center md:flex-row justify-evenly mt-24">
@@ -59,7 +60,7 @@ const Contact = () => {
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen={true}
-            className="hidden  md:block"
+            className="hidden rounded-lg md:block"
           ></iframe>
           <iframe
             src="https://www.youtube.com/embed/35G9c-f6qlo"
@@ -68,12 +69,13 @@ const Contact = () => {
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen={true}
+            className=" rounded-lg "
           ></iframe>
         </div>
       </div>
 
       <div className="relative">
-        <div className='bg-[url("https://images.pexels.com/photos/7788508/pexels-photo-7788508.jpeg?cs=srgb&dl=pexels-ivan-babydov-7788508.jpg&fm=jpg")] w-full h-[540px] bg-center brightness-50  absolute  md:h-[200px] bg-fixed'></div>
+        <div className='bg-[url("https://images.pexels.com/photos/7788508/pexels-photo-7788508.jpeg?cs=srgb&dl=pexels-ivan-babydov-7788508.jpg&fm=jpg")] w-full h-[540px] bg-center brightness-50  absolute  md:h-[250px] bg-fixed'></div>
 
         <div className="w-full absolute">
           <h1

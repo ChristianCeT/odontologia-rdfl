@@ -5,7 +5,6 @@ import Menu from "../../assets/Iconos/bx-align-right.svg";
 
 
 
-
 export const NavbarDental = () => {
   let Links = [
     { name: "Servicios", link: "#servicio" },
@@ -35,15 +34,15 @@ export const NavbarDental = () => {
         </div>
 
         <ul
-          className={`md:flex  md:items-center md:pb-0 pb-3 absolute md:static bg-[#5DC1B9] md:z-[100] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
-            open ? "top-44 " : "top-[-490px]"
+          className={`md:flex  h-44  md:items-center md:pb-0 pb-3 absolute md:static bg-[#5DC1B9] md:z-[100] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
+            open ? "top-44 " : "top-[-480px]"
           }`}
         >
           {Links.map((link) => (
-            <li key={link.name} className="md:ml-8 text-xl md:my-0 my-7">
+            <li key={link.name} className="md:ml-8 text-[24px] md:mt-[9px]text-[14px]">
               <a
                 href={link.link}
-                className="text-white hover:text-[#06BB82]  duration-500 font-normal"
+                className="text-white hover:text-[#000000]  duration-500 font-normal"
               >
                 {link.name}
               </a>
