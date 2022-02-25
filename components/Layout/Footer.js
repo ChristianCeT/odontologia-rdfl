@@ -95,11 +95,11 @@ const Footer = () => {
               <p className="text-[#06BB82] text-[19px] font-[500]">
                 Dirección:
               </p>
-              Av. Fray A. Alcalde 10, 44100 Gd l., Jal., México
+              Calle sr de los milagros #218
             </h3>
             <h3>
               <p className="text-[#06BB82] text-[19px] font-[500]">Correo:</p>
-              firedev@hotmail.com
+              rodceram20@gmail.com
             </h3>
 
             <h3>
