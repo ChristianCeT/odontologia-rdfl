@@ -122,7 +122,7 @@ const Footer = () => {
 
             <h3>
               <p className="text-[#06BB82] text-[19px] font-[500]">Teléfono:</p>
-              +51-940323222
+              +51-934120533
             </h3>
           </div>
         </div>
