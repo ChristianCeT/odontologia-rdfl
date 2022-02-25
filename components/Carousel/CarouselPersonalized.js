@@ -38,7 +38,7 @@ const data = [
   },
   {
     image: Imagen5,
-    nombre: "NOMBRE 5",
+    nombre: "CORONA DE PORCELANA",
   },
   {
     image: Imagen6,
@@ -46,7 +46,7 @@ const data = [
   },
   {
     image: Imagen7,
-    nombre: "NOMBRE 7",
+    nombre: "CORONA METAL PORCELANA",
   },
   {
     image: Imagen8,
@@ -62,11 +62,11 @@ const data = [
   },
   {
     image: Imagen11,
-    nombre: "NOMBRE 11",
+    nombre: "CORONA DE PORCELANA",
   },
   {
     image: Imagen12,
-    nombre: "NOMBRE 12",
+    nombre: "FERULA DE ACETATO",
   },
   {
     image: Imagen13,
