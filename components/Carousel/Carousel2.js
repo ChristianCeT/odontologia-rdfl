@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 
 const Carousel2 = () => {
   return (
-    <div className="relative -z-10">
+    <div className="relative">
       <Carousel
         showIndicators={false}
         showThumbs={false}
