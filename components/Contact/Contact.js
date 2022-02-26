@@ -11,10 +11,10 @@ const Contact = () => {
     <div>
       <div className="bg-[#5DC1B9] w-full h-96  text-center items-center">
         <div className="flex flex-col ">
-          <h1 className="text-[24px] mt-[55px] text-[#ffffff]">
+          <h1 className="text-[24px] mt-[55px] font-semibold text-[#ffffff]">
             Ponte en contacto con nosotros
           </h1>
-          <p className="text-[18px] mt-[25px] text-[#ffffff]">
+          <p className="text-[18px] mt-[25px] font-semibold text-[#ffffff]">
             Escríbenos a través de nuestro correo, formulario, chat en línea o
             llamarnos a nuestros números telefónicos.
           </p>
@@ -23,14 +23,14 @@ const Contact = () => {
           <div className="backdrop-opacity-10 backdrop-invert bg-white/30 w-[207px] h-[79px] flex flex-row items-center justify-center rounded-[15px] mt-[30px] cursor-pointer translate-y-1.5 hover:scale-110 duration-300 ">
             <Image alt="laboratorio-dental" src={Telf} width={45} height={60} />{" "}
             <a href="tel:+51934120533">
-              <span className="text-[#ffffff] ">LLÁMENOS</span>
+              <span className="text-[#ffffff] font-semibold ">LLÁMENOS</span>
             </a>
           </div>
         </div>
       </div>
 
       <div className="w-full h-[720px] flex flex-col items-center justify-center">
-        <h1 className="text-[#5DC1B9] text-[24px] mb-10">VIDEO</h1>
+        <h1 className="text-[#5DC1B9] text-[24px] font-semibold mb-10">VIDEO</h1>
 
         <div className="w-full flex  flex-col items-center md:flex-row justify-evenly">
           <iframe
@@ -133,7 +133,7 @@ const Contact = () => {
                 height={100}
                 className="translate-x-0 hover:scale-110 duration-300"
               />
-              <span className="text-[18px] text-[#fdfdfd] font-semibold">
+              <span className="text-[18px]  text-[#fdfdfd] font-semibold">
                 Eficiencia
               </span>
             </div>

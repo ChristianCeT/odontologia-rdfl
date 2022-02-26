@@ -15,7 +15,7 @@ export const NavbarDental = () => {
   let [open, setOpen] = useState(false);
 
   return (
-    <div className="shadow-md w-full  ">
+    <div className="shadow-md w-full   ">
       <div className="md:flex items-center justify-between bg-[#5DC1B9] h-44 py-4 md:px-10 px-7">
         <div
           className="font-bold text-2xl cursor-pointer  flex items-center font-[Poppins] 
@@ -39,10 +39,10 @@ export const NavbarDental = () => {
           }`}
         >
           {Links.map((link) => (
-            <li key={link.name} className="md:ml-8 text-[24px] md:mt-[9px]text-[14px]">
+            <li key={link.name} className="md:ml-8 text-[24px] font-semibold md:mt-[9px]text-[14px]">
               <a
                 href={link.link}
-                className="text-white hover:text-[#000000]  duration-500 font-normal"
+                className="text-white  hover:text-[#000000]  duration-500 font-normal"
               >
                 {link.name}
               </a>

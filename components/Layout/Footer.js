@@ -73,11 +73,11 @@ const Footer = () => {
   };
 
   return (
-    <div className="mt-[550px] md:mt-[250px]">
+    <div className="mt-[550px] md:mt-[295px]">
       <div className="w-full pb-3 flex flex-col justify-center md:flex-row md:h-[30rem] md:w-[99%] md:items-center">
         <div className="w-full h-full pb-16 flex flex-col items-center md:w-1/2">
           <div>
-            <h2 id="contact" className="text-[#06BB82] text-[29px] font-[600]">
+            <h2 id="contact" className="text-[#06BB82] text-[29px] font-semibold ">
               CONTACTO
             </h2>
           </div>
@@ -218,7 +218,7 @@ const Footer = () => {
         </a>
       </div>
 
-      <div className="bg-[#5DC1B9] h-9 flex justify-center items-center text-white">
+      <div className="bg-[#5DC1B9] h-9 flex justify-center items-center font-semibold text-white">
         <p>&copy; 2022 Creado por FIREDEV</p>
       </div>
     </div>

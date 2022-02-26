@@ -45,7 +45,7 @@ const Services = () => {
   return (
     <div className="bg-gradient-to-r from-[#09B6BD] to-[#5DC1B9] text-white flex items-center flex-col md:flex-row">
       <div className="md:w-1/2 xl:px-28 px-12 w-full h-full flex flex-col items-center overflow-hidden">
-        <h2 id="servicio" className="text-[32px] mb-4 mt-[10%]">
+        <h2 id="servicio" className="text-[32px] font-semibold mb-4 mt-[10%]">
           SERVICIOS
         </h2>
         <Carousel
@@ -100,7 +100,7 @@ const Services = () => {
         swipeable={false}
       >
         <div className="mt-[10%]">
-          <h1 className="text-[32px]">CORONAS DE PORCELANA</h1>
+          <h1 className="text-[32px] font-semibold ">CORONAS DE PORCELANA</h1>
           <div className="w-full grid gap-4 py-12 md:grid-cols-2">
             {serviciosData.slice(0, 5).map((servicioD, index) => (
               <div key={index} className="flex flex-col items-center">
@@ -118,7 +118,7 @@ const Services = () => {
         </div>
 
         <div className="mt-[10%]">
-          <h1 className="text-[32px]">PRÓTESIS DE ACRÍLICO</h1>
+          <h1 className="text-[32px] font-semibold ">PRÓTESIS DE ACRÍLICO</h1>
           <div className="w-full grid gap-5 py-12 md:grid-cols-2">
             {serviciosData.slice(5, 10).map((servicioD, index) => (
               <div key={index} className="flex flex-col items-center">
@@ -129,7 +129,7 @@ const Services = () => {
                     layout="intrinsic"
                   ></Image>
                 </div>
-                <h2 className="text-[25px]">{servicioD.nombre}</h2>
+                <h2 className="text-[25px] font-semibold">{servicioD.nombre}</h2>
               </div>
             ))}
           </div>

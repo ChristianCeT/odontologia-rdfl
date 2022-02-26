@@ -102,7 +102,7 @@ const CarouselPersonalized = () => {
           height={130}
           className=""
         ></Image>
-        <h2 id="galeria" className="text-[25px] text-[#09B6BD]">
+        <h2 id="galeria" className="text-[25px] font-semibold text-[#09B6BD]">
           GALERIA
         </h2>
       </div>
@@ -124,7 +124,7 @@ const CarouselPersonalized = () => {
               <div before={dataI.nombre} className={cssTransform}>
                 <Image
                   alt="laboratorio-dental"
-                  className="rounded-lg"
+                  className="rounded-lg font-semibold"
                   priority={true}
                   src={dataI.image}
                   width={400}
@@ -145,7 +145,7 @@ const CarouselPersonalized = () => {
               <div before={dataI.nombre} className={cssTransform}>
                 <Image
                   alt="laboratorio-dental"
-                  className="rounded-lg"
+                  className="rounded-lg font-semibold"
                   priority={true}
                   src={dataI.image}
                   width={400}
