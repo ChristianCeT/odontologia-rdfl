@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 
 const Carousel2 = () => {
   return (
+    /* asdasdsad */
     <div className="relative">
       <Carousel
         showIndicators={false}
