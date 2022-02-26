@@ -8,13 +8,13 @@ const index = () => {
   return (
     <>
       <Head>
-        <title>Rodo Lab - Laboratorio dental</title>
+        <title>Rodo Lab | Laboratorio dental</title>
         <meta
           name="viewport"
           content="initial-scale=1.0, width=device-width"
           key="viewport"
         />
-        <meta title="Rodo Lab - Laboratorio dental"></meta>
+        <meta title="Rodo Lab | Laboratorio dental"></meta>
         <meta name="keywords" content="diente, laboratorio, dientes"/>
         <meta
           name="description"
@@ -23,7 +23,7 @@ const index = () => {
         <meta name="robots" content="index, follow"></meta> 
         <meta
           property="og:title"
-          content="Rodo Lab - Laboratorio dental"
+          content="Rodo Lab | Laboratorio dental"
         ></meta>
         <meta
           property="og:url"
