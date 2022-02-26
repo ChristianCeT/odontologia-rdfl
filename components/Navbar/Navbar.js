@@ -47,15 +47,15 @@ const Navbar = () => {
       <div className="flex items-center flex-shrink-0 text-white mr-6 ">
         <div className="logo">
           <div>
-          <Image
-            alt="laboratorio-dental"
-            src={Logo}
-            quality={100}
-            priority={true}
-            width={medicionLogo.widthL}
-            height={medicionLogo.heighL}
-            objectFit="unset"
-          ></Image>
+            <Image
+              alt="laboratorio-dental"
+              src={Logo}
+              quality={100}
+              priority={true}
+              width={medicionLogo.widthL}
+              height={medicionLogo.heighL}
+              objectFit="unset"
+            ></Image>
           </div>
         </div>
       </div>

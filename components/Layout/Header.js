@@ -1,7 +1,5 @@
 import React from "react";
-
-import { NavbarDental } from "../NavbarDental/NavbarDental";
-import Navbar from "../NavbarPrueba/Navbar.js";
+import Navbar from "../Navbar/Navbar.js";
 
 const Header = () => {
   return (
