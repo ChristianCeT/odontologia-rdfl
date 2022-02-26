@@ -32,7 +32,7 @@ const Navbar = () => {
     if (open && windowSize.widthW >= 1024) {
       setOpen(false);
     }
-  }, [windowSize]);
+  }, [windowSize, open]);
 
   useEffect(() => {
     if (windowSize.widthW <= 760) {
