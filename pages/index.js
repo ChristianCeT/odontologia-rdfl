@@ -17,7 +17,7 @@ const index = () => {
         <meta title="Rodo Lab | Laboratorio dental"></meta>
         <meta
           name="description"
-          content="En Rodo Lab podemos construir y hacer toda clase de dientes, permitiendo una mejor comodidad y apoyando al bienestar de la salud"
+          content="Rodo lab nuestra mejor garantía es que trabajamos con materiales Bío compatibles para sus pacientes, note la real diferencia en un laboratorio que requiere de materiales excelentes para una mejor precisión en sus trabajos."
         ></meta>
         <meta name="robots" content="index, follow"></meta>
         <meta
