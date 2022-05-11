@@ -29,7 +29,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="w-full h-[720px] flex flex-col items-center justify-center">
+      <div className="w-full h-[920px] flex flex-col items-center justify-center">
         <h1 className="text-[#5DC1B9] text-[24px] font-semibold mb-10">VIDEO</h1>
 
         <div className="w-full flex  flex-col items-center md:flex-row justify-evenly">
@@ -72,6 +72,29 @@ const Contact = () => {
             className=" rounded-lg "
           ></iframe>
         </div>
+
+        <div className="w-full flex  flex-col items-center md:flex-row justify-evenly mt-24">
+        <iframe
+          src="https://www.youtube.com/embed/a1qpwC-WHek"
+          width="315"
+          height="200"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen={true}
+          className="hidden rounded-lg md:block"
+        ></iframe>
+        <iframe
+          src="https://www.youtube.com/embed/JPfkUkrhVk8"
+          width="315"
+          height="200"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen={true}
+          className=" rounded-lg "
+        ></iframe>
+      </div>
+
+
       </div>
 
       <div className="relative">
