@@ -204,7 +204,7 @@ const Footer = () => {
 
       <div className=" fixed right-5 bottom-9 translate-x-0 hover:scale-110 duration-300">
         <a
-          href="https://api.whatsapp.com/send?phone=+51934120533"
+          href="https://wa.me/+51934120533/?text=Buen%20día%20,%20me%20podría%20brindar%20información"
           target="_blank"
           rel="noreferrer"
         >
