@@ -95,7 +95,7 @@ const Footer = () => {
               <p className="text-[#06BB82] text-[19px] font-[500]">
                 Dirección:
               </p>
-              Calle sr de los milagros #218
+              Sargento Lores # 858 - Iquitos
             </h3>
             <h3>
               <p className="text-[#06BB82] text-[19px] font-[500]">Correo:</p>
