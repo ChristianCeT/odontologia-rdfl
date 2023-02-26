@@ -15,6 +15,11 @@ import Imagen11 from "../../assets/img/Imagen11.jpeg";
 import Imagen12 from "../../assets/img/Imagen12.jpeg";
 import Imagen13 from "../../assets/img/Imagen13.jpeg";
 import Imagen14 from "../../assets/img/Imagen14.jpeg";
+import Imagen15 from "../../assets/img/Imagen15.jpeg";
+import Imagen16 from "../../assets/img/Imagen16.jpeg";
+import Imagen17 from "../../assets/img/Imagen17.jpeg";
+import Imagen18 from "../../assets/img/Imagen18.jpeg";
+import Imagen19 from "../../assets/img/Imagen19.jpeg";
 
 import DienteGalery from "../../assets/Iconos/GaleryDiente.svg";
 import ModalComponent from "../ModalComponent/ModalComponent";
@@ -76,6 +81,26 @@ const data = [
     image: Imagen14,
     nombre: "PREPARACIÓN DE METAL PARA PORCELANA",
   },
+  {
+    image: Imagen15,
+    nombre: "",
+  },
+  {
+    image: Imagen16,
+    nombre: "",
+  },
+  {
+    image: Imagen17,
+    nombre: "",
+  },
+  {
+    image: Imagen18,
+    nombre: "",
+  },
+  {
+    image: Imagen19,
+    nombre: "",
+  },
 ];
 
 const CarouselPersonalized = () => {
@@ -115,7 +140,7 @@ const CarouselPersonalized = () => {
         swipeable={false}
       >
         <div className="flex flex-wrap justify-center">
-          {data.slice(0, 7).map((dataI, index) => (
+          {data.slice(0, 10).map((dataI, index) => (
             <button
               key={index}
               onClick={() => onClick(index + 1, { nombre: dataI.nombre })}
@@ -135,10 +160,11 @@ const CarouselPersonalized = () => {
             </button>
           ))}
         </div>
+        
         <div>
-          {data.slice(7, 14).map((dataI, index) => (
+          {data.slice(10, 19).map((dataI, index) => (
             <button
-              onClick={() => onClick(index + 8, { nombre: dataI.nombre })}
+              onClick={() => onClick(index + 11, { nombre: dataI.nombre })}
               key={index}
               className="m-1"
             >
@@ -156,6 +182,7 @@ const CarouselPersonalized = () => {
             </button>
           ))}
         </div>
+        
       </Carousel>
       <ModalComponent
         open={open}
